@@ -12,8 +12,8 @@ module.exports = {
 	resolve: {
 		extensions: ['.js','.jsx'],
 		alias:{
-			'@components': path.resolve(__dirname,'src/components'),
-			'@styles': path.resolve(__dirname,'src/assets/styles')
+			Components: path.resolve(__dirname,'src/components/'),
+			'@styles': path.resolve(__dirname,'src/assets/styles/')
 		}
 	},
 	module:{
@@ -41,7 +41,7 @@ module.exports = {
 			filename: './index.html'
 		}),
 		new MiniCssExtractPlugin({
-			filename: [name].css
+			filename: '[name].css'
 		})
 	]
 }

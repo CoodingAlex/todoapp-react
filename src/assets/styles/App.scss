@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Raleway:wght@700&display=swap');
+@import '@styles/Vars.scss';
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+#app{
+	display: flex;
+	justify-content: center;
+}
+.main__app {
+	margin-top: 55px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 600px;
+}
+.app__title {
+	@include fontstyle($font2, 3.6rem, 42.26px);
+}

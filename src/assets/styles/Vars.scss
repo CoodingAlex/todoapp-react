@@ -1,0 +1,9 @@
+$font1: 'Montserrat', sans-serif;
+$font2: 'Raleway', sans-serif;
+@mixin fontstyle($font,$size,$line-height){
+	font-family: $font;
+	font-size: $size;
+	line-height: $line-height;
+}
+
+
